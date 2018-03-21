@@ -31,10 +31,12 @@ h4 {
 }
 
 p {
-    font-family: 'roboto', sans-serif;
-    font-weight: 400;
+    color: #021a41;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    line-height: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
 
 
