@@ -1,0 +1,15 @@
+img {
+    width: 100%;
+}
+
+.heroimage {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.herotext {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
