@@ -39,7 +39,10 @@ p {
     padding: 0;
 }
 
-
+picture img {
+    padding: 15px 15px 15px 10px;
+    max-width: 300px;
+}
 
 #hero {
     max-width: 375px;
@@ -51,16 +54,32 @@ p {
 
 #hero .bluebox {
     max-width: 375px;
-    background-color: blue;
+    background-color: #67758d;
+}
+
+#hero .bluebox p {
+    color: #ffffff;
+    font-size: 0.9em;
+    padding: 15px;
+    line-height: 1.3em;
 }
 
 #hero .whitebox {
     width: 300px;
     background-color: white;
+    padding: 15px;
 }
 
 #hero .green {
     color: green;
+}
+
+#hero .whitebox p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
 
 /*------------------- Header ----------------------------------*/
