@@ -1,23 +1,95 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #021a41;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #00a54d;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    color: #67758d;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #021a41;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+picture img {
+    padding: 15px 15px 15px 10px;
+    max-width: 300px;
+}
+
+#hero {
+    max-width: 375px;
+}
+
 #hero img {
-    width: 100%;
+    width: 375px;
 }
 
-.heroimage {
-    position: relative;
-    text-align: center;
-    color: white;
+#hero .bluebox {
+    max-width: 375px;
+    background-color: #67758d;
 }
 
-.herotext {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+#hero .bluebox p {
+    color: #ffffff;
+    font-size: 0.9em;
+    padding: 15px;
+    line-height: 1.3em;
 }
+
+#hero .whitebox {
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+}
+
+#hero .green {
+    color: green;
+}
+
+#hero .whitebox p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
 /*------------------- Header ----------------------------------*/
+
 header {
     background: #1b3053
 }
+
 /*------------------- Hamburgermenu ---------------------------*/
+
 a {
     text-decoration: none;
     color: #021A41;
@@ -116,4 +188,71 @@ a:hover {
 
 #menuToggle input:checked ~ ul {
     transform: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #hero .bluebox {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        z-index: -1;
+    }
+
+    #hero .heroimage {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    #hero .herotext {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        color: black;
+        z-index: 2;
+    }
+
+    #hero .whitebox {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        width: 300px;
+        height: 100px;
+        background-color: white;
+        z-index: 1;
+    }
+}
+/*-------------------- news sektionen -----------------------------*/
+#news .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+#news .column {
+    flex-grow: 1;
+    flex-basis: 100px;
+    padding: 5px;
+}
+/*-------------------- certifikater sektionen ---------------------*/
+#certifikater img {
+    width: ;
+}
+#certifikater .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#certifikater .column {
+    flex-grow: 1;
+    flex-basis: 100px;
+    padding: 5px;
+}
+#certifikater .column_content {
+    display: flex;
+    flex-direction: row;
 }
